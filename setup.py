@@ -6,7 +6,7 @@ import sys
 # Fool distutils to accept more than ASCII
 reload(sys).setdefaultencoding('utf-8')
 
-version = '0.3.1-saltbox'
+version = '0.3.2'
 
 setup(name='repoze-oauth-plugin',
     version=version,
@@ -24,10 +24,10 @@ setup(name='repoze-oauth-plugin',
     zip_safe=False,
     test_suite='nose.collector',
     dependency_links=[
-        'https://github.com/saebyn/repoze.who/tarball/4007e894724e51ffd143230c736be118f30c8982#egg=repoze.who-1.0.19-saltbox',
+        'https://github.com/saebyn/repoze.who/tarball/ed6d1c826786e8f2f25441df6b13b34e15367d0b#egg=repoze.who-1.0.20',
     ],
     install_requires=[
-        'repoze.who===1.0.19-saltbox',
+        'repoze.who===1.0.20',
         'repoze.what>=1.0.9',
         'oauth2>=1.2.0',
         'SQLAlchemy>=0.5.5',
